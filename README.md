@@ -8,11 +8,11 @@
 - **推薦方案（Plan Results）**：依預算整理出多種保障策略組合，供使用者快速瀏覽。
 - **商品比較矩陣（Comparison Matrix）**：最多可同時比較數款保單的條款與保障內容差異。
 - **AI 保險顧問（AI Assistant）**：針對已選保單進行問答，協助使用者理解方案間的差異。
-- **RAG 驅動的推薦引擎**：後端串接 Qdrant 向量資料庫與 LightRAG，提供具檢索依據的保單推薦與問答。
+- **RAG 驅動的推薦引擎**：後端串接 Qdrant 向量資料庫與 [LightRAG](https://github.com/HKUDS/LightRAG)，提供具檢索依據的保單推薦與問答。
 
 ## 技術棧
 
-- **框架**：[TanStack Start](https://tanstack.com/start)（React 19 + Vite + 檔案式路由 [TanStack Router](https://tanstack.com/router)）
+- **框架**：TanStack Start（React 19 + Vite + 檔案式路由 TanStack Router）
 - **狀態管理**：Zustand
 - **表單驗證**：react-hook-form + zod
 - **UI**：Tailwind CSS v4、Radix UI、shadcn 風格元件
