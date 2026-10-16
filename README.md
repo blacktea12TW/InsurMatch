@@ -36,8 +36,8 @@ npm install
 前端依賴一組 OpenAI 相容的 `/v1/chat/completions` 服務，啟動順序：
 
 ```text
-Qdrant 建置索引（testbed，只需執行一次）
-  → LightRAG query 服務（之後每次開啟前端前執行即可）
+Qdrant 建置索引
+  → LightRAG服務（之後每次開啟前端前執行此檔案即可）
 ```
 
 ### 3. 設定環境變數
@@ -50,7 +50,7 @@ LLM_API_BASE_URL=http://127.0.0.1:2828
 LLM_API_KEY=YOUR_API_KEY
 ```
 
-- `LLM_API_KEY` 僅由後端（server）讀取，不會送進瀏覽器。
+- `LLM_API_KEY` 僅由後端伺服器讀取，不會送進瀏覽器。
 - `LLM_API_BASE_URL` 必須指向提供 OpenAI 相容 `/v1/chat/completions` 的服務；若上游不需要 API key，可省略 `LLM_API_KEY`。
 
 ### 4. 啟動開發伺服器
